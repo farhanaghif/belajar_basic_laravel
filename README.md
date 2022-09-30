@@ -7,15 +7,31 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-#Belajar Laravel Spatie
-###Repository untuk belajar basic laravel CRUD dan Extension Laravel Spatie
+# Belajar Laravel Spatie
 
-##Spatie Laravel Permission
+### Repository untuk belajar basic laravel CRUD dan Extension Laravel Spatie
 
-##Spatie Laravel Activity Log
+![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/dashboard.png)
 
-##Spatie Laravel Media-Library
+## Spatie Laravel Permission
 
-##Eloquent
+### Example in Controller
 
-##Polymorphic
+![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/permission-in-controller.png)
+
+### Example in Blade View
+
+![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/permission-in-blade-view.png)
+
+## Spatie Laravel Activity Log
+
+![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/activity-log.png)
+
+## Spatie Laravel Media-Library
+
+![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/media-library.png)
+
+## Polymorphic
+
+![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/polymorphic-1.png)
+![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/polymorphic-2.png)
