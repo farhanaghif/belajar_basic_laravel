@@ -11,15 +11,35 @@
 
 ### Repository untuk belajar basic laravel CRUD dan Extension Laravel Spatie
 
-![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/dashboard.png)
+### Warning !!!
+
+-   Php 8.0 atau diatasnya
+-   Keperluan Spatie
+    -   require "spatie/laravel-medialibrary:^10.0.0"
+    -   require "spatie/laravel-activitylog:^4.0.0"
+    -   require "spatie/laravel-permission:^5.0.0"
+
+### Instalasi
+
+-   Buka `cmd` atau `terminal` sejenisnya
+-   Clone repository berikut `git clone https://github.com/farhanaghif/contoh_spatie.git`
+-   Jalankan perintah `cd` untuk masuk ke direktori `contoh_spatie` yang baru saja dibuat
+-   Install composer terlebih dahulu `composer install`
+-   Buat database `contoh_spatie` dan hubungkan (cek di `.env`)
+-   Jalankan `php artisan migrate` untuk data kosong
+-   Atau import `contoh_spatie.sql` untuk data yang sudah disediakan
+-   Done
+
+<img src="https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/dashboard.png">
+<!-- ![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/dashboard.png) -->
 
 ## Spatie Laravel Permission
 
-### Example in Controller
+### Contoh di Controller
 
 ![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/permission-in-controller.png)
 
-### Example in Blade View
+### Contoh di Blade View
 
 ![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/permission-in-blade-view.png)
 
