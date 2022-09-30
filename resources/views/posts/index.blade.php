@@ -25,7 +25,7 @@
                 </thead>
                 <tbody>
                     @foreach ($posts as $post)
-                        <tr>
+                        <tr">
                             <th scope="row">{{ $loop->iteration }}</th>
                             <td>{{ $post->title }}</td>
                             <td>{{ $post->publish }}</td>
@@ -54,7 +54,8 @@
                                 @endswitch
                             </td>
                             <td>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex
+                                justify-content-center">
                                     <a class="btn btn-info mx-1" href="{{ route('post.edit', $post) }}">
                                         <i class="bi bi-pencil-square"></i>
                                     </a>
@@ -65,7 +66,7 @@
                                     @extends('posts.modal-delete')
                                 </div>
                             </td>
-                        </tr>
+                            </tr>
                     @endforeach
                 </tbody>
             </table>

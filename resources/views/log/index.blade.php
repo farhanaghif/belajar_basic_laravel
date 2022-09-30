@@ -1,5 +1,6 @@
 @extends('layouts.app-nice')
 @section('content')
+    <x-page-title namaPageAktif="Activity Log" />
     <div class="table-responsive">
         <table
             class="datatable table table-striped

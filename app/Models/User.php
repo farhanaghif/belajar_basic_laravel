@@ -43,4 +43,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getGetImageAttribute()
+    {
+        return "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=$this->name";
+    }
 }

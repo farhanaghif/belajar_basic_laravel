@@ -45,7 +45,7 @@
                 @foreach ($video->comments as $comment)
                     <div class="row">
                         <div class="col-1">
-                            <img src="{{ $comment->user->name }}" alt="Photo" class="rounded-circle">
+                            <img src="{{ $comment->user->getImage }}" alt="Photo" class="rounded-circle">
                         </div>
                         <div class="col-11">
                             <h6>{{ $comment->user->name }}</h6>
