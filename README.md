@@ -28,10 +28,12 @@
 -   Buat database `contoh_spatie` dan hubungkan (cek di `.env`)
 -   Jalankan `php artisan migrate` untuk data kosong
 -   Atau import `contoh_spatie.sql` untuk data yang sudah disediakan
+-   Jalankan `npm install` dan `npm run build` atau `npm run dev`
+-   Clear cache terlebih dahulu dengan menjalankan `php artisan config:clear` atau `php artisan config:cache` atau `php artisan optimize`
+-   Jalankan `php artisan serve` untuk menjalankan aplikasi
 -   Done
 
 <img src="https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/dashboard.png">
-<!-- ![image.png](https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/dashboard.png) -->
 
 ## Spatie Laravel Permission
 
