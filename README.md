@@ -29,7 +29,7 @@
 -   Jalankan `php artisan migrate` untuk data kosong
 -   Atau import `contoh_spatie.sql` untuk data yang sudah disediakan
 -   Jalankan `npm install` dan `npm run build` atau `npm run dev`
--   Clear cache terlebih dahulu dengan menjalankan `php artisan config:clear` atau `php artisan config:cache` atau `php artisan optimize`
+-   Disarankan untuk clear cache terlebih dahulu dengan menjalankan dengan `php artisan config:clear` atau `php artisan config:cache` atau `php artisan optimize`
 -   Jalankan `php artisan serve` untuk menjalankan aplikasi
 -   Done
 
