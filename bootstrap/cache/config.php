@@ -12,7 +12,7 @@
   ),
   'app' => 
   array (
-    'name' => 'Laravel',
+    'name' => 'Belajar Basic Laravel',
     'env' => 'local',
     'debug' => true,
     'url' => 'http://127.0.0.1:8000',
@@ -209,7 +209,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\framework/cache/data',
+        'path' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -253,7 +253,7 @@
         'driver' => 'octane',
       ),
     ),
-    'prefix' => 'laravel_cache_',
+    'prefix' => 'belajar_basic_laravel_cache_',
   ),
   'cors' => 
   array (
@@ -352,7 +352,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'belajar_basic_laravel_database_',
       ),
       'default' => 
       array (
@@ -479,7 +479,7 @@
     ),
     'temporary_files' => 
     array (
-      'local_path' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\framework/cache/laravel-excel',
+      'local_path' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\framework/cache/laravel-excel',
       'remote_disk' => NULL,
       'remote_prefix' => NULL,
       'force_resync_remote' => NULL,
@@ -493,13 +493,13 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\app',
+        'root' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\app',
         'throw' => false,
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\app/public',
+        'root' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\app/public',
         'url' => 'http://127.0.0.1:8000/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -519,7 +519,7 @@
     ),
     'links' => 
     array (
-      'C:\\xampp\\htdocs\\contoh_spatie\\public\\storage' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\app/public',
+      'C:\\xampp\\htdocs\\belajar_basic_laravel\\public\\storage' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -558,13 +558,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -616,7 +616,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -675,14 +675,14 @@
     'from' => 
     array (
       'address' => 'hello@example.com',
-      'name' => 'Laravel',
+      'name' => 'Belajar Basic Laravel',
     ),
     'markdown' => 
     array (
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\xampp\\htdocs\\contoh_spatie\\resources\\views/vendor/mail',
+        0 => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -840,7 +840,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\framework/sessions',
+    'files' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -849,7 +849,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'belajar_basic_laravel_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -860,9 +860,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\contoh_spatie\\resources\\views',
+      0 => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\resources\\views',
     ),
-    'compiled' => 'C:\\xampp\\htdocs\\contoh_spatie\\storage\\framework\\views',
+    'compiled' => 'C:\\xampp\\htdocs\\belajar_basic_laravel\\storage\\framework\\views',
   ),
   'image' => 
   array (
@@ -941,7 +941,7 @@
     array (
     ),
     'enable_runnable_solutions' => NULL,
-    'remote_sites_path' => 'C:\\xampp\\htdocs\\contoh_spatie',
+    'remote_sites_path' => 'C:\\xampp\\htdocs\\belajar_basic_laravel',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
     'settings_file_path' => '',
