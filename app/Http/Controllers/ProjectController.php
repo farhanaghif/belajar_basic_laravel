@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ProjectsExport;
+use App\Imports\ProjectsImport;
 use App\Models\Project;
 use App\Models\Task;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ProjectController extends Controller
 {
@@ -59,6 +62,7 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
+        dd('test');
         $project = Project::with('jumlahTask')->findOrFail($id);
         $tasks = Task::where('project_id', $project->id)->get();
         activity()->log('View Project');
@@ -111,5 +115,17 @@ class ProjectController extends Controller
     {
         Project::findOrFail($id)->delete();
         return redirect()->route('project.index');
+    }
+
+    public function export()
+    {
+        return Excel::download(new ProjectsExport, 'project.xlsx');
+    }
+
+    public function import(Request $request)
+    {
+        Excel::import(new ProjectsImport, $request->file('file'));
+        
+        return redirect()->back();
     }
 }

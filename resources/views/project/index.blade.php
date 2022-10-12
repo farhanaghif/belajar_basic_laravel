@@ -6,19 +6,36 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
+                    @role('superadmin')
+                        <div class="card-header">
+                            <div class="row d-flex">
+                                <form action="{{ route('project.import') }}" method="POST" class="col-8 mb-0 text-end"
+                                    enctype="multipart/form-data">
+                                    @csrf
+                                    <input type="file" name="file">
+                                    <button class="btn btn-secondary">
+                                        Import
+                                    </button>
+                                </form>
+                                <form action="{{ route('project.export') }}" class="col-2 mb-0 text-end">
+                                    @csrf
+                                    <button class="btn btn-primary">
+                                        Export
+                                    </button>
+                                </form>
+                                <div class="col-2 text-end">
+                                    <div class="text-end btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-create">
+                                        Add
+                                        @extends('project.modal-form-create')
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endrole
                     <div class="card-body">
                         <div class="table-responsive-md">
                             <table
                                 class="datatable table table-striped table-hover table-borderless table-primary align-middle">
-                                @role('superadmin')
-                                    <div class="text-end m-4" data-bs-toggle="modal" data-bs-target="#modal-create">
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#modal-create">
-                                            <i class="bi bi-plus-square-fill"></i>
-                                        </button>
-                                        @extends('project.modal-form-create')
-                                    </div>
-                                @endrole
                                 <thead class="table-light justify-content-between">
                                     <tr>
                                         <th>No</th>

@@ -36,6 +36,9 @@ Route::middleware(['auth'])->group(function(){
 
     //project
     Route::resource('project', ProjectController::class);
+    // Route::get('project-export', [ProjectController::class, 'export'])->name('project.export');
+    Route::get('project/project/export', [ProjectController::class, 'export'])->name('project.export');
+    Route::post('project/project/import', [ProjectController::class, 'import'])->name('project.import');
     
     Route::get('dashboard',[HomeController::class, 'dashboard'])->name('dashboard');
     Route::get('home', [HomeController::class, 'index'])->name('home');

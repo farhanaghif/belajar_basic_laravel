@@ -20,19 +20,36 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
+                    <?php if(auth()->check() && auth()->user()->hasRole('superadmin')): ?>
+                        <div class="card-header">
+                            <div class="row d-flex">
+                                <form action="<?php echo e(route('project.import')); ?>" method="POST" class="col-8 mb-0 text-end"
+                                    enctype="multipart/form-data">
+                                    <?php echo csrf_field(); ?>
+                                    <input type="file" name="file">
+                                    <button class="btn btn-secondary">
+                                        Import
+                                    </button>
+                                </form>
+                                <form action="<?php echo e(route('project.export')); ?>" class="col-2 mb-0 text-end">
+                                    <?php echo csrf_field(); ?>
+                                    <button class="btn btn-primary">
+                                        Export
+                                    </button>
+                                </form>
+                                <div class="col-2 text-end">
+                                    <div class="text-end btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-create">
+                                        Add
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                     <div class="card-body">
                         <div class="table-responsive-md">
                             <table
                                 class="datatable table table-striped table-hover table-borderless table-primary align-middle">
-                                <?php if(auth()->check() && auth()->user()->hasRole('superadmin')): ?>
-                                    <div class="text-end m-4" data-bs-toggle="modal" data-bs-target="#modal-create">
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#modal-create">
-                                            <i class="bi bi-plus-square-fill"></i>
-                                        </button>
-                                        
-                                    </div>
-                                <?php endif; ?>
                                 <thead class="table-light justify-content-between">
                                     <tr>
                                         <th>No</th>
