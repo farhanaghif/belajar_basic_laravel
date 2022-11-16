@@ -62,7 +62,6 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        dd('test');
         $project = Project::with('jumlahTask')->findOrFail($id);
         $tasks = Task::where('project_id', $project->id)->get();
         activity()->log('View Project');

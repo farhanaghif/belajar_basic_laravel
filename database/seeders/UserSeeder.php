@@ -16,8 +16,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        // $faker = Factory::create();
-
         $data = [
             'id' => 5,
             'name' => 'Chdaunv',
@@ -27,6 +25,5 @@ class UserSeeder extends Seeder
 
         $user = User::create($data);
         $user->assignRole('user');
-        // User::factory(1)->create();
     }
 }
