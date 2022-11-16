@@ -14,6 +14,21 @@ class VideoController extends Controller
         return view('video.index', compact('videos'));
     }
 
+    public function store(Request $request)
+    {
+        $data = $request->validate([
+            'title' => 'required|string',
+            'user_id' => 'required|integer',
+            'code' => 'required|string',
+            'url' => 'required|string',
+            'description' => 'required|string',
+            'publish' => 'required|integer',
+        ]);
+        Video::create($data);
+        activity()->log('Tambah Video');
+        return redirect()->route('video.index');
+    }
+
     public function show($code)
     {
         $video = Video::where('code', $code)->firstOrFail();

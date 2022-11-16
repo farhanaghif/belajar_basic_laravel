@@ -46,6 +46,7 @@ Route::middleware(['auth'])->group(function(){
 
     //video
     Route::get('video', [VideoController::class,'index'])->name('video');
+    Route::post('video/store', [VideoController::class,'store'])->name('video.store');
     Route::get('video/{code}', [VideoController::class,'show'])->name('video.show');
 
     //article
