@@ -31,6 +31,7 @@
 -   Jalankan `npm install` dan `npm run build` atau `npm run dev`
 -   Disarankan untuk clear cache terlebih dahulu dengan menjalankan dengan `php artisan config:clear` atau `php artisan config:cache` atau `php artisan optimize`
 -   Jalankan `php artisan serve` untuk menjalankan aplikasi
+-   Gunakan email `admin@admin.com` dengan password `123456789` untuk mengakses dashboard admin
 -   Done
 
 <img src="https://github.com/farhanaghif/contoh_spatie/blob/main/public/screenshot/dashboard.png">

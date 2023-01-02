@@ -41,7 +41,7 @@
                                 <tr>
                                     <td>Handled by</td>
                                     <td>:</td>
-                                    <td class="text-center">{{ $project->leader->name }}</td>
+                                    <td class="text-center">{{ $project->leader->name ?? ''}}</td>
                                 </tr>
                             </table>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

@@ -53,9 +53,9 @@
                                             <td scope="row">{{ $loop->iteration }}</td>
                                             <td>{{ $project->name }}</td>
                                             <td>{{ $project->jumlah_task_count }}</td>
-                                            <td>{{ $project->leader->name }}</td>
+                                            <td>{{ $project->leader->name ?? '' }}</td>
                                             <td>{{ $project->owner }}</td>
-                                            <td>{{ $project->progress }}</td>
+                                            <td>{{ $project->progress }}%</td>
                                             <td>
                                                 <div class="d-flex align-middle">
                                                     <a href="{{ route('project.show', $project) }}">
